@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Link a Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Area links -->
     <!-- Link al foglio di stile reset & utilities -->
     <link rel="stylesheet" href="assets/css/reset_and_utilities.css">
@@ -20,8 +23,8 @@
 
 <body>
     <header>
-        <nav class="debug_bg_r p_fixed_header d_flex flex_main_btw">
-            <ul id="left_nav" class="debug_y d_flex flex_main_btw flex_cross_center reset_list_style">
+        <nav class="p_fixed_header d_flex flex_main_btw">
+            <ul id="left_nav" class="d_flex flex_main_btw flex_cross_center reset_list_style">
                 <li>
                     <a href="#">
                         <img src="assets/img/logo-small.png" alt="Logo Dropbox">
@@ -43,7 +46,7 @@
                     </a>
                 </li>
             </ul>
-            <ul id="right_nav" class="debug_b d_flex flex_main_btw flex_cross_center reset_list_style">
+            <ul id="right_nav" class="d_flex flex_main_btw flex_cross_center reset_list_style">
                 <li>
                     <a href="#" class="reset_decor text_color">
                         Supporto
@@ -60,15 +63,181 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="reset_decor">
-                        Tasto Inizia
+                    <a href="#" class="reset_decor btn_normal">
+                        Inizia
                     </a>
                 </li>
             </ul>
         </nav>
+        <div id="header_block" class="debug_b central_block"></div>
     </header>
 
-    
+    <footer>
+        <div id="footer_block" class="central_block d_flex">
+            <div id="footer_top" class="d_flex flex_main_btw">
+                <div>
+                    <h3>Dropbox</h3>
+                    <ul class="reset_list_style">
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Applicazione desktop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Perchè Dropbox
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Piani
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Sicurezza
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Funzioni
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Prodotti</h3>
+                    <ul class="reset_list_style">
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Applicazione desktop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Perchè Dropbox
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Piani
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Sicurezza
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Funzioni
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Azienda</h3>
+                    <ul class="reset_list_style">
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Applicazione desktop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Perchè Dropbox
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Piani
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Sicurezza
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Funzioni
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Supporto</h3>
+                    <ul class="reset_list_style">
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Applicazione desktop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Perchè Dropbox
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Piani
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Sicurezza
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Funzioni
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Community</h3>
+                    <ul class="reset_list_style">
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Applicazione desktop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Perchè Dropbox
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Piani
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Sicurezza
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="reset_decor footer_text_color">
+                                Funzioni
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer_bottom" class="footer_text_color">
+                <div class="d_ib">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <select name="country" id="country_select">
+                        <option value="it">Italiano</option>
+                        <option value="en">English</option>
+                        <option value="es">Espa&#241;ol</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

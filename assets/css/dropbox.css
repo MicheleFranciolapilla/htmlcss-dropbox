@@ -1,24 +1,45 @@
 /* Definizione variabili */
 :root{
+    --header_height: 75vh;
+    --header_color: #B4D0E7;
     --nav_height: 10vh;
     --nav_font_size: 1em;
     --nav_logo_size: 80%;
-    --text_color: #808080;
+    --central_width: 65%;
+    --footer_color: #23272A;
+    --footer_text_color: #D3D3D3;
+    --text_color: #181818;
     --button_text_color: #FFFFFF;
     --button_color: #0061FF;
+}
+
+h3{
+    font-size: 1.5em;
 }
 
 .text_color{
     color: var(--text_color);
 }
 
+.footer_text_color{
+    color: var(--footer_text_color);
+}
+
+.central_block{
+    width: var(--central_width);
+    margin: 0 auto;
+}
+
 header{
     width: 100%;
+    height: var(--header_height);
+    background-color: var(--header_color);
 }
 
 nav{
     width: 100%;
     height: var(--nav_height);
+    background-color: #FFFFFF;
     font-size: var(--nav_font_size);
 }
 
@@ -26,15 +47,51 @@ nav{
     flex-basis: 30%;
 }
 
-#left_nav{
-    padding-left: 10px;
+#left_nav, #right_nav{
+    padding: 0 15px;
 }
 
 #left_nav img{
     padding: 0;
     width: var(--nav_logo_size);
+    vertical-align: middle;
 }
 
-#right_nav{
-    padding-right: 10px;
+.btn_normal{
+    color: var(--button_text_color);
+    background-color: var(--button_color);
+}
+
+footer{
+    padding: 5vh 0;
+    background-color: var(--footer_color);
+}
+
+#footer_block{
+    flex-direction: column;
+}
+
+#footer_top > div{
+    color: #FFFFFF;
+    padding: 5vh 0;
+}
+
+#footer_top ul{
+    padding: 5vh 0;
+}
+
+#footer_top li{
+    line-height: 2em;
+}
+
+#footer_bottom > .d_ib{
+    padding: 5vh 15px 0 0;
+    border-top: 1px solid var(--footer_text_color);
+}
+
+#footer_bottom select{
+    background-color: var(--footer_color);
+    color: var(--footer_text_color);
+    border: none;
+    margin: 0 5px;
 }
