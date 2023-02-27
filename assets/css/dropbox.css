@@ -1,6 +1,6 @@
 /* Definizione variabili */
 :root{
-    --header_height: 75vh;
+    --header_height: 90vh;
     --header_color: #B4D0E7;
     --nav_height: 10vh;
     --nav_font_size: 1em;
@@ -11,6 +11,13 @@
     --text_color: #181818;
     --button_text_color: #FFFFFF;
     --button_color: #0061FF;
+}
+
+h1{
+    padding-top: calc(1.5 * var(--nav_height));
+    padding-left: 18%;
+    padding-right: 28%;
+    font-size: 4.5em;
 }
 
 h3{
@@ -60,6 +67,20 @@ nav{
 .btn_normal{
     color: var(--button_text_color);
     background-color: var(--button_color);
+}
+
+#header_block{
+    right: 0;
+    top: 50px;
+}
+
+#header_block span:last-child{
+    font-size: 2.5em;
+    bottom: 90px;
+}
+
+#header_block a{
+    margin: 2em 0;
 }
 
 footer{
