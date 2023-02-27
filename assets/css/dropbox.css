@@ -1,0 +1,40 @@
+/* Definizione variabili */
+:root{
+    --nav_height: 10vh;
+    --nav_font_size: 1em;
+    --nav_logo_size: 80%;
+    --text_color: #808080;
+    --button_text_color: #FFFFFF;
+    --button_color: #0061FF;
+}
+
+.text_color{
+    color: var(--text_color);
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    height: var(--nav_height);
+    font-size: var(--nav_font_size);
+}
+
+#left_nav, #right_nav{
+    flex-basis: 30%;
+}
+
+#left_nav{
+    padding-left: 10px;
+}
+
+#left_nav img{
+    padding: 0;
+    width: var(--nav_logo_size);
+}
+
+#right_nav{
+    padding-right: 10px;
+}

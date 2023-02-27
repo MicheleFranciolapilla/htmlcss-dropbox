@@ -1,0 +1,231 @@
+/***************************************************************************************************************/
+/******* FOGLIO DI STILE CONTENENTE CLASSI CON FUNZIONI DI RESET ATTRIBUTI, DEBUG E FUNZIONI DI UTILITIES ******/
+/***************************************************************************************************************/
+
+/***********************************/
+/********** SEZIONE RESET **********/
+/***********************************/
+
+/********************************/
+/* *{} (reset box) */
+/* .reset_font */
+/* .reset_list_style */
+/* .reset_decor */
+/********************************/
+
+/* Reset degli attributi box */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ritorno al font di default */
+.reset_font{
+    font-family: initial;
+}
+
+/* Reset dei marcatori di lista */
+.reset_list_style{
+    list-style: none;
+}
+
+/* Reset decorazione di testo */
+.reset_decor{
+    text-decoration: none;
+}
+
+/****************************************/
+/**********　SEZIONE DEBUG***************/
+/****************************************/
+
+/********************************/
+/* .debug_y */
+/* .debug_r */
+/* .debug_b */
+/* .debug_bg_y */
+/* .debug_bg_r */
+/* .debug_bg_b */
+/********************************/
+
+/* Debug bordo giallo*/
+.debug_y{
+    border: 5px solid yellow;
+}
+
+/* Debug bordo rosso*/
+.debug_r{
+    border: 5px solid red;
+}
+/* Debug bordo blu*/
+.debug_b{
+    border: 5px solid blue;
+}
+
+/* Debug sfondo giallo */
+.debug_bg_y{
+    background-color: yellow;
+}
+
+/* Debug sfondo rosso */
+.debug_bg_r{
+    background-color: red;
+}
+
+/* Debug sfondo blu */
+.debug_bg_b{
+    background-color: blue;
+}
+
+/****************************************/
+/**********　SEZIONE UTILITIES **********/
+/****************************************/
+
+/********** FLOAT E CLEARFIX **********/
+/* .float_l */
+/* .float_r */
+/* .clearfix::after */
+/**************************************/
+
+/* Float left */
+.float_l{
+    float: left;
+}
+
+/* Float right */
+.float_r{
+    float: right;
+}
+
+/* Clearfix "both" */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/********** POSITION **********/
+/* .p_rel */
+/* .p_abs */
+/* .p_left_bottom */
+/* .p_right_top */
+/* .p_left_top */
+/* .p_right_bottom */
+/* .p_fixed */
+/* .p_fixed_header */
+/* .p_fixed_footer */
+/*****************************/
+
+/* Position relative */
+.p_rel{
+    position: relative;
+}
+
+/* Position absolute */
+.p_abs{
+    position: absolute;
+}
+
+/* Posizionamento (absolute), angolo sx/basso */
+.p_left_bottom{
+    left: 0;
+    bottom: 0;
+}
+
+/* Posizionamento (absolute), angolo dx/alto */
+.p_right_top{
+    right: 0;
+    top: 0;
+}
+
+/* Posizionamento (absolute), angolo sx/alto */
+.p_left_top{
+    left: 0;
+    top: 0;
+}
+
+/* Posizionamento (absolute), angolo dx/basso */
+.p_right_bottom{
+    right: 0;
+    bottom: 0;
+}
+
+/* Position fixed */
+.p_fixed{
+    position: fixed;
+}
+
+/* Header fixed e in primo piano */
+.p_fixed_header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+/* Footer fixed e in primo piano */
+.p_fixed_footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+/********** DISPLAY & FLEX UTILITIES **********/
+/* .d_ib */
+/* .d_block */
+/* .d_flex */
+/* .flex_wrap */
+/* .flex_main_center */
+/* .flex_main_btw */
+/* .flex_main_evenly */
+/* .flex_main_around */
+/* .flex_cross_center */
+/* .flex_center */
+/**********************************************/
+
+/* Display inline block */
+.d_ib{
+    display: inline-block;
+}
+
+/* Display block */
+.d_block{
+    display: block;
+}
+
+/* Display flex */
+.d_flex{
+    display: flex;
+}
+
+.flex_wrap{
+    flex-wrap: wrap;
+}
+
+.flex_main_center{
+    justify-content: center;
+}
+
+.flex_main_btw{
+    justify-content: space-between;
+}
+
+.flex_main_evenly{
+    justify-content: space-evenly;
+}
+
+.flex_main_around{
+    justify-content: space-around;
+}
+
+.flex_cross_center{
+    align-items: center;
+}
+
+.flex_center{
+    justify-content: center;
+    align-items: center;
+}
