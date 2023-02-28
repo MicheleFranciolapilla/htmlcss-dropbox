@@ -8,7 +8,7 @@
     --central_width: 65%;
     --section_padding: 15vh 5vw;
     --footer_color: #23272A;
-    --footer_text_color: #a49797;
+    --footer_text_color: #A49797;
     --text_color: #181818;
     --button_text_color: #FFFFFF;
     --button_color: #0061FF;
@@ -91,7 +91,8 @@ nav{
     margin: 2em 0;
 }
 
-#find_plan_section{
+#find_plan_section > #radio_input{
+    padding: 3em 0;
 }
 
 .section_padding{
@@ -104,15 +105,31 @@ nav{
     border: 1px solid var(--footer_text_color);
 }
 
-.card > :not(.modulo:first-child){
+.card > :not(.card_title){
     padding: 1em;
 }
 
-.card > modulo:nth-child(5){
-    margin: 0 1em;
+.card > .modulo.btn_normal{
+    margin: 0 auto;
 }
 
-.card 
+.card ul li{
+    margin: 1.5em 0;
+}
+
+.card > ul li:first-child, .card > ul li:last-child{
+    margin: 0;
+}
+
+.card ul i{
+    padding-top: 0.2em;
+    padding-right: 0.5em;
+    font-size: 0.8em;
+}
+
+.card .color_blue{
+    color: var(--button_color);
+}
 
 .card_title{
     text-align: center;
@@ -120,9 +137,9 @@ nav{
     border-bottom: 1px solid var(--footer_text_color);
 }
 
-.card > .invisible{
-    color: white);
-    border-bottom: 1px solid var(--footer_text_color);
+.card > .line{
+    color: var(--footer_text_color);
+    text-decoration: underline;
 }
 
 footer{
