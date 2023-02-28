@@ -8,7 +8,7 @@
     --central_width: 65%;
     --section_padding: 15vh 5vw;
     --footer_color: #23272A;
-    --footer_text_color: #D3D3D3;
+    --footer_text_color: #a49797;
     --text_color: #181818;
     --button_text_color: #FFFFFF;
     --button_color: #0061FF;
@@ -100,7 +100,29 @@ nav{
 
 .card{
     flex-basis: calc(90% / 3);
-    
+    height: 100%;
+    border: 1px solid var(--footer_text_color);
+}
+
+.card > :not(.modulo:first-child){
+    padding: 1em;
+}
+
+.card > modulo:nth-child(5){
+    margin: 0 1em;
+}
+
+.card 
+
+.card_title{
+    text-align: center;
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--footer_text_color);
+}
+
+.card > .invisible{
+    color: white);
+    border-bottom: 1px solid var(--footer_text_color);
 }
 
 footer{
