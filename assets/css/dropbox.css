@@ -105,6 +105,10 @@ nav{
     border: 1px solid var(--footer_text_color);
 }
 
+.card .modulo:lastchild{
+    height: 40%;
+}
+
 .card > :not(.card_title){
     padding: 1em;
 }
