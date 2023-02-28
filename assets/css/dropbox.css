@@ -14,9 +14,6 @@
 }
 
 h1{
-    padding-top: calc(1.5 * var(--nav_height));
-    padding-left: 18%;
-    padding-right: 28%;
     font-size: 4.5em;
 }
 
@@ -39,7 +36,7 @@ h3{
 
 header{
     width: 100%;
-    height: var(--header_height);
+    min-height: var(--header_height);
     background-color: var(--header_color);
 }
 
@@ -70,13 +67,19 @@ nav{
 }
 
 #header_block{
-    right: 0;
-    top: 50px;
+    top: var(--nav_height);
+    height: calc(var(--header_height) - var(--nav_height));
+    padding: calc(var(--nav_height) / 2) 0;
 }
 
-#header_block span:last-child{
+#header_block > #shifted_block{
+    bottom: 0;
+    transform: translateY(15%);
+}
+
+#header_block #arrow_link{
     font-size: 2.5em;
-    bottom: 80px;
+    bottom: 15%;
 }
 
 #header_block a{
