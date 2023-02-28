@@ -6,6 +6,7 @@
     --nav_font_size: 1em;
     --nav_logo_size: 80%;
     --central_width: 65%;
+    --section_padding: 15vh 5vw;
     --footer_color: #23272A;
     --footer_text_color: #D3D3D3;
     --text_color: #181818;
@@ -15,6 +16,10 @@
 
 h1{
     font-size: 4.5em;
+}
+
+h2{
+    font-size: 3em;
 }
 
 h3{
@@ -86,13 +91,21 @@ nav{
     margin: 2em 0;
 }
 
+#find_plan_section{
+}
+
+.section_padding{
+    padding: var(--section_padding);
+}
+
+.card{
+    flex-basis: calc(90% / 3);
+    
+}
+
 footer{
     padding: 5vh 0;
     background-color: var(--footer_color);
-}
-
-#footer_block{
-    flex-direction: column;
 }
 
 #footer_top > div{

@@ -177,6 +177,7 @@
 /* .d_ib */
 /* .d_block */
 /* .d_flex */
+/* .flex_column */
 /* .flex_wrap */
 /* .flex_main_center */
 /* .flex_main_btw */
@@ -199,6 +200,10 @@
 /* Display flex */
 .d_flex{
     display: flex;
+}
+
+.flex_column{
+    flex-direction: column;
 }
 
 .flex_wrap{
