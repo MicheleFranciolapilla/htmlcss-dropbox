@@ -281,6 +281,23 @@ nav{
     background-color: var(--cco_col);
 }
 
+#free_trial{
+    width: 100%;
+    height: calc(4 * var(--nav_height));
+    background-color: var(--header_color);
+    column-gap: 10%;
+}
+
+#free_trial > h2{
+    flex-basis: 30%;
+    padding-top: 1em;
+}
+
+#free_trial > .btn_normal{
+    background-color: white;
+    color: var(--text_color);
+}
+
 footer{
     padding: 5vh 0;
     background-color: var(--footer_color);
