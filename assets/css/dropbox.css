@@ -91,40 +91,33 @@ nav{
     margin: 2em 0;
 }
 
-#find_plan_section > #radio_input{
-    padding: 3em 0;
-}
-
 .section_padding{
     padding: var(--section_padding);
+}
+
+#find_plan_section{
+    row-gap: 3em;
 }
 
 .card{
     flex-basis: calc(90% / 3);
     border: 1px solid var(--footer_text_color);
+    padding-bottom: 2em;
+    row-gap: 1.5em;
     align-self: stretch;
 }
 
-.card > :not(.card_title){
-    padding: 1em;
+.card :not(.card_title){
+    margin: 0 0.3em;
 }
 
-.card > .modulo.btn_normal{
-    margin: 0 auto;
+.card li.d_flex{
+    column-gap: 0.3em;
+    margin: 0.5em 0;
 }
 
-.card ul li{
-    margin: 1.5em 0;
-}
-
-.card > ul li:first-child, .card > ul li:last-child{
-    margin: 0;
-}
-
-.card ul i{
-    padding-top: 0.2em;
-    padding-right: 0.5em;
-    font-size: 0.8em;
+.card .modulo > h4{
+    margin-bottom: 1em;
 }
 
 .card .color_blue{
