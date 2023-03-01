@@ -7,6 +7,15 @@
     --nav_logo_size: 80%;
     --central_width: 65%;
     --section_padding: 15vh 5vw;
+    --designit_col: #A2D39B;
+    --designit_ext: #D1E9CD;
+    --asu_col: #61082B;
+    --uf_col: #0093CE;
+    --topps_col: #FF1C1C;
+    --wbr_col: #D5001F;
+    --hearst_col: #B4D0E7;
+    --lonely_col: #0D2481;
+    --cco_col: #FFD830;
     --footer_color: #23272A;
     --footer_text_color: #A49797;
     --text_color: #181818;
@@ -192,6 +201,74 @@ nav{
 .business_item{
     width: calc(90% / 3);
     row-gap: 1.5em;
+}
+
+#wipro a{
+    margin: 2em 0;
+}
+
+#wide_box{
+    width: 100%;
+    height: 34vw;
+}
+
+/* Caratteristiche degli aside in quanto flex items */
+#wipro > #wide_box > aside{
+    flex-basis: 34vw;
+}
+
+/* Caratteristiche degli aside in quanto flex containers */
+#wipro > #wide_box > aside{
+}
+
+.aside_logo{
+    flex-basis: 50%;
+    height: 17vw;
+}
+
+#inner{
+    height: 17vw;
+}
+
+.aside_logo > img{
+    object-fit: 100%;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%) sepia(99%) saturate(2%) hue-rotate(358deg) brightness(103%) contrast(101%);
+}
+
+.aside_logo.designit{
+    background-color: var(--designit_col);
+    border: 15px solid var(--designit_ext);
+}
+
+.aside_logo.asu{
+    background-color: var(--asu_col);
+}
+
+.aside_logo.uf{
+    background-color: var(--uf_col);
+}
+
+.aside_logo.topps{
+    background-color: var(--topps_col);
+}
+
+.aside_logo.wbr{
+    background-color: var(--wbr_col);
+}
+
+.aside_logo.hearst{
+    background-color: var(--hearst_col);
+}
+
+.aside_logo.lonely{
+    background-color: var(--lonely_col);
+}
+
+.aside_logo.cco{
+    background-color: var(--cco_col);
 }
 
 footer{
