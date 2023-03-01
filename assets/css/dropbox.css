@@ -19,7 +19,7 @@ h1{
 }
 
 h2{
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 h3{
@@ -95,7 +95,7 @@ nav{
     padding: var(--section_padding);
 }
 
-#find_plan_section, #radio_and_cards{
+#find_plan_section, #radio_and_cards, #business_group{
     row-gap: 3em;
 }
 
@@ -163,7 +163,7 @@ nav{
 }
 
 #meet_partner{
-    margin: 5vh 0;
+    margin-top: 5vh;
     column-gap: 5%;
 }
 
@@ -183,6 +183,15 @@ nav{
     background-color: white;
     color: var(--text_color);
     border: 1px solid var(--text_color);    
+}
+
+#business_group{
+    margin-top: 3em;
+}
+
+.business_item{
+    width: calc(90% / 3);
+    row-gap: 1.5em;
 }
 
 footer{
