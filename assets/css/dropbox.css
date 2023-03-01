@@ -7,6 +7,7 @@
     --nav_logo_size: 80%;
     --central_width: 65%;
     --section_padding: 15vh 5vw;
+    --inner_block_color: #F5F5F5;
     --designit_col: #A2D39B;
     --designit_ext: #D1E9CD;
     --asu_col: #61082B;
@@ -143,7 +144,7 @@ nav{
     text-align: center;
 }
 
-.card > .line{
+.line{
     color: var(--footer_text_color);
     text-decoration: underline;
 }
@@ -214,7 +215,7 @@ nav{
 
 /* Caratteristiche degli aside in quanto flex items */
 #wipro > #wide_box > aside{
-    flex-basis: 34vw;
+    flex-basis: 34%;
 }
 
 /* Caratteristiche degli aside in quanto flex containers */
@@ -227,7 +228,16 @@ nav{
 }
 
 #inner{
-    height: 17vw;
+    width: 32%;
+    padding: 50px;
+    align-self: stretch;
+    gap: 10%;
+    background-color: var(--inner_block_color);
+    overflow: auto;
+}
+
+#inner > img{
+    width: 50%;
 }
 
 .aside_logo > img{
