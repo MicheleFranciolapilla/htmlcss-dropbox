@@ -218,10 +218,6 @@ nav{
     flex-basis: 34%;
 }
 
-/* Caratteristiche degli aside in quanto flex containers */
-#wipro > #wide_box > aside{
-}
-
 .aside_logo{
     flex-basis: 50%;
     height: 17vw;
@@ -296,15 +292,75 @@ nav{
     color: var(--text_color);
 }
 
-/* #faq{
-    padding-top: 3em;
-} */
-
-#faq > #sliding_faq > .faq_item > .text{
-    flex-basis: 90%;
+#faq > #sliding_faq{
+    padding: 3em 0;
+    line-height: 3em;
 }
 
+#faq > #sliding_faq > .faq_item:first-child{
+    border-top: 1px solid var(--text_color);
+}
 
+#faq > #sliding_faq > .faq_item{
+    border-bottom: 1px solid var(--text_color);
+}
+
+#faq > #sliding_faq > .faq_item > .text{
+    flex-basis: 95%;
+}
+
+#faq > #sliding_faq > .faq_item > .caret{
+    flex-basis: 5%;
+    text-align: center;
+}
+
+.faq_item:hover{
+    animation-name: bord_bott;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.faq_item:hover .caret{
+    animation-name: caret_col;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bord_bott{
+    from    {border-bottom: 1px solid var(--text_color);}
+    to      {border-bottom: 3px solid orange;}
+}
+
+@keyframes caret_col{
+    0%      {color: var(--text_color);}
+    100%    {color: orange;}
+}
+
+.faq_item:hover:active{
+    animation-name: answers;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.faq_item:hover:active .caret{
+    animation-name: caret_rev;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes answers{
+    from    {border-bottom: 1px solid var(--text_color);}
+    to      {border-bottom: 3px solid orange;}
+}
+
+@keyframes caret_rev{
+    0%      {transform: rotate(0deg);
+             color: orange;
+            }
+    100%    {transform: rotate(180deg);
+             color:red;
+            }
+}
 
 footer{
     padding: 5vh 0;
