@@ -300,6 +300,12 @@ nav{
     padding-top: 3em;
 } */
 
+#faq > #sliding_faq > .faq_item > .text{
+    flex-basis: 90%;
+}
+
+
+
 footer{
     padding: 5vh 0;
     background-color: var(--footer_color);
