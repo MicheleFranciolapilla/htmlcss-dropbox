@@ -95,7 +95,7 @@ nav{
     padding: var(--section_padding);
 }
 
-#find_plan_section{
+#find_plan_section, #radio_and_cards{
     row-gap: 3em;
 }
 
@@ -130,9 +130,59 @@ nav{
     border-bottom: 1px solid var(--footer_text_color);
 }
 
+.link_div{
+    text-align: center;
+}
+
 .card > .line{
     color: var(--footer_text_color);
     text-decoration: underline;
+}
+
+#enterprise{
+    border: 1px solid var(--footer_text_color);
+}
+
+#enterprise_block{
+    column-gap: 10%;
+}
+
+#enterprise_left{
+    flex-basis: 60%;
+    padding: 2em 2em 2em 0.5em;
+}
+
+#enterprise_left > h4{
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#enterprise_right{
+    flex-basis: 30%;
+    padding: 2em 1.5em;
+}
+
+#meet_partner{
+    margin: 5vh 0;
+    column-gap: 5%;
+}
+
+#meet_partner > img{
+    width: 60%;
+}
+
+#meet_partner > div{
+    padding-top: 2em;
+}
+
+#meet_partner p{
+    padding: 2em 0;
+}
+
+#meet_partner .btn_normal{
+    background-color: white;
+    color: var(--text_color);
+    border: 1px solid var(--text_color);    
 }
 
 footer{

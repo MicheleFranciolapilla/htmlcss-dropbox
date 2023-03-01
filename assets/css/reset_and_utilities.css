@@ -184,6 +184,7 @@
 /* .flex_main_evenly */
 /* .flex_main_around */
 /* .flex_cross_center */
+/* .flex_cross_start */
 /* .flex_center */
 /**********************************************/
 
@@ -228,6 +229,10 @@
 
 .flex_cross_center{
     align-items: center;
+}
+
+.flex_cros_start{
+    align-items: flex-start;
 }
 
 .flex_center{

@@ -91,10 +91,10 @@
     </header>
 
     <main>
-        <section>
-            <!-- Find_plan_section è l'elemento puntato dalla freccia nello header (link interno); è centrato nella pagina (come le sezioni successive) ed è un flexbox con main-axis verticale. I suoi flex items sono: titolo, radio button e set delle card -->
-            <div id="find_plan_section" class="central_block section_padding d_flex flex_column flex_main_btw">
-                <h2>Trova il piano business che fa per te</h2>
+        <section id="find_plan_section" class="central_block section_padding d_flex flex_column flex_main_btw">
+        <!-- Find_plan_section è l'elemento puntato dalla freccia nello header (link interno); è centrato nella pagina (come le sezioni successive) ed è un flexbox con main-axis verticale. I suoi flex items sono: titolo, radio button e set delle card -->
+            <h2>Trova il piano business che fa per te</h2>
+            <article id="radio_and_cards" class="d_flex flex_column flex_main_btw">
                 <div id="radio_input">
                     <input type="radio" name="fatturazione" value="mensile" id="monthly" checked="checked">
                     <label for="monthly">Fatturazione mensile</label>
@@ -104,7 +104,7 @@
                 <!-- Card_set è anch'esso un flexbox (main-axis orizzontale), i cui elementi sono le singole cards -->
                 <div id="card_set" class="d_flex flex_main_btw">
                     <!-- Le cards (flex items) di card_set sono strutturate in una serie di moduli ... testo, liste, pulsante... -->
-
+    
                     <!-- Card nr 1 -->
                     <div class="card d_flex flex_column">
                         <!-- Modulo 1 -->
@@ -124,25 +124,19 @@
                                 <span>
                                     <i class="fa-solid fa-user"></i>
                                 </span> 
-                                <span>
-                                    1 utente
-                                </span>
+                                <span>1 utente</span>
                             </li>
                             <li class="d_flex">
                                 <span>
                                     <i class="fa-solid fa-folder"></i>
                                 </span> 
-                                <span>
-                                    5 TB di spazio di archiviazione sicuro
-                                </span>
+                                <span>5 TB di spazio di archiviazione sicuro</span>
                             </li>
                             <li class="d_flex">
                                 <span>
                                     <i class="fa-sharp fa-solid fa-share-nodes"></i>
                                 </span>
-                                <span>
-                                    Funzioni di produttività premium e condivisione file semplice e sicura
-                                </span>
+                                <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
                             </li>
                         </ul>
                         <!-- Modulo 5 -->
@@ -157,10 +151,8 @@
                             <a href="#">acquista ora</a>
                         </div>
                         <!-- Modulo 7 -->
-                        <span class="modulo line">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </span>
+                        <span class="modulo line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         <!-- Modulo 8 -->
                         <div class="modulo">
                             <h4>Punti Salienti del piano</h4>
@@ -169,22 +161,18 @@
                                     <span>
                                         <i class="fa-solid fa-check color_blue"></i>
                                     </span>
-                                    <span>
-                                        Invia file fino a 100 GB con Dropbox Transfer
-                                    </span> 
+                                    <span>Invia file fino a 100 GB con Dropbox Transfer</span> 
                                 </li>
                                 <li class="d_flex">
                                     <span>
                                         <i class="fa-solid fa-check color_blue"></i>
                                     </span>
-                                    <span>
-                                        Cartelle offline su dispositivi mobili
-                                    </span>
+                                    <span>Cartelle offline su dispositivi mobili</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
-
+    
                     <!-- Card nr 2 -->
                     <div class="card d_flex flex_column">
                         <!-- Modulo 1 -->
@@ -204,25 +192,19 @@
                                 <span>
                                     <i class="fa-solid fa-users"></i>
                                 </span>
-                                <span>
-                                    3 o più utenti
-                                </span>
+                                <span>3 o più utenti</span>
                             </li>
                             <li class="d_flex">
                                 <span>
                                     <i class="fa-solid fa-folder"></i>
                                 </span>
-                                <span>
-                                    Tutto lo spazio di cui ha bisogno il tuo team
-                                </span>
+                                <span>Tutto lo spazio di cui ha bisogno il tuo team</span>
                             </li>
                             <li class="d_flex">
                                 <span>
                                     <i class="fa-sharp fa-solid fa-share-nodes"></i>
                                 </span>
-                                <span>
-                                    Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team
-                                </span>
+                                <span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</span>
                             </li>
                         </ul>
                         <!-- Modulo 5 -->
@@ -237,10 +219,8 @@
                             <a href="#">acquista ora</a>
                         </div>
                         <!-- Modulo 7 -->
-                        <span class="modulo line">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </span>
+                        <span class="modulo line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         <!-- Modulo 8 -->
                         <div class="modulo">
                             <h4>Punti Salienti del piano</h4>
@@ -249,46 +229,36 @@
                                     <span>
                                         <i class="fa-solid fa-check color_blue"></i>
                                     </span>
-                                    <span>
-                                        Nessun limite di spazio per i file
-                                    </span> 
+                                    <span>Nessun limite di spazio per i file</span> 
                                 </li>
                                 <li class="d_flex">
                                     <span>
                                         <i class="fa-solid fa-check color_blue"></i>
                                     </span>
-                                    <span>
-                                        Cartelle offline su dispositivi mobili
-                                    </span>
+                                    <span>Cartelle offline su dispositivi mobili</span>
                                 </li>
                                 <li class="d_flex">
                                     <span>
                                         <i class="fa-solid fa-check color_blue"></i>
                                     </span>
-                                    <span>
-                                        Risparmio del 50% rispetto alle iscrizioni singole
-                                    </span> 
+                                    <span>Risparmio del 50% rispetto alle iscrizioni singole</span> 
                                 </li>
                                 <li class="d_flex">
                                     <span>
                                         <i class="fa-solid fa-check color_blue"></i>
                                     </span>
-                                    <span>
-                                        Possibilità di inserire nuovi membri del team
-                                    </span>
+                                    <span>Possibilità di inserire nuovi membri del team</span>
                                 </li>
                                 <li class="d_flex">
                                     <span>
                                         <i class="fa-solid fa-check color_blue"></i>
                                     </span>
-                                    <span>
-                                        Gestione dei permessi in base ai ruoli
-                                    </span>
+                                    <span>Gestione dei permessi in base ai ruoli</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
-
+    
                     <!-- Card nr 3 -->
                     <div class="card d_flex flex_column">
                         <!-- Modulo 1 -->
@@ -308,25 +278,19 @@
                                 <span>
                                     <i class="fa-solid fa-user"></i>
                                 </span>
-                                <span>
-                                    10 o più utenti
-                                </span>
+                                <span>10 o più utenti</span>
                             </li>
                             <li class="d_flex">
                                 <span>
                                     <i class="fa-solid fa-folder"></i>
                                 </span>
-                                <span>
-                                    Soluzioni personalizzabili per la tua azienda
-                                </span>
+                                <span>Soluzioni personalizzabili per la tua azienda</span>
                             </li>
                             <li class="d_flex">
                                 <span>
                                     <i class="fa-sharp fa-solid fa-share-nodes"></i>
                                 </span>
-                                <span>
-                                    Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala
-                                </span>
+                                <span>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</span>
                             </li>
                         </ul>
                         <!-- Modulo 5 -->
@@ -341,10 +305,8 @@
                             <a href="#">acquista ora</a>
                         </div>
                         <!-- Modulo 7 -->
-                        <span class="modulo line">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </span>
+                        <span class="modulo line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         <!-- Modulo 8 -->
                         <div class="modulo">
                             <h4>Punti Salienti del piano</h4>
@@ -353,33 +315,55 @@
                                     <span>
                                         <i class="fa-solid fa-check color_blue"></i>
                                     </span>
-                                    <span>
-                                        Cartelle offline su dispositivi mobili
-                                    </span> 
+                                    <span>Cartelle offline su dispositivi mobili</span> 
                                 </li>
                                 <li class="d_flex">
                                     <span>
                                         <i class="fa-solid fa-check color_blue"></i>
                                     </span>
-                                    <span>
-                                        Servizio assistenza 24h
-                                    </span>
+                                    <span>Servizio assistenza 24h</span>
                                 </li>
                                 <li class="d_flex">
                                     <span>
                                         <i class="fa-solid fa-check color_blue"></i>
                                     </span>
-                                    <span>
-                                        Possibilità di personalizzazione totale
-                                    </span>
+                                    <span>Possibilità di personalizzazione totale</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
-
+    
                 </div>
-                <div></div>
-            </div>
+            </article>
+
+            <article id="enterprise" class="d_flex flex_column flex_main_btw">
+                <span class="modulo card_title">
+                    <i class="fa-solid fa-building"></i> Team
+                </span>
+                <div id="enterprise_block" class="d_flex">
+                    <div id="enterprise_left">
+                        <h3>Enterprise</h3>
+                        <h4>Contatta l'ufficio vendite per i prezzi</h4>
+                        <p>
+                            Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.
+                        </p>
+                    </div>
+                    <div id="enterprise_right">
+                        <a href="#"  class="reset_decor btn_normal">Contatta l'ufficio vendite</a>
+                    </div>
+                </div>
+            </article>
+
+            <article id="meet_partner" class="d_flex">
+                <img src="assets/img/partner.png" alt="foto meet partner">
+                <div>
+                    <h3>Entra in contatto con un partner Dropbox</h3>
+                    <p>
+                        Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.
+                    </p>
+                    <a href="#" class="reset_decor btn_normal">Trova un partner</a>
+                </div>
+            </article>
         </section>
     </main>
 
