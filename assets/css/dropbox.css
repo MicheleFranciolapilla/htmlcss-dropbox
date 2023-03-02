@@ -24,6 +24,7 @@
     --button_color: #0061FF;
     --faq_active_color: blue;
     --faq_active_bgcolor: #B4D0E7;
+    --aside_logo_hover: rgba(255,255,255,0.5);
 }
 
 h1{
@@ -248,35 +249,50 @@ nav{
 
 .aside_logo.designit{
     background-color: var(--designit_col);
-    border: 15px solid var(--designit_ext);
+    border: 10px solid var(--designit_col);
 }
 
 .aside_logo.asu{
     background-color: var(--asu_col);
+    border: 10px solid var(--asu_col);
 }
 
 .aside_logo.uf{
     background-color: var(--uf_col);
+    border: 10px solid var(--uf_col);
 }
 
 .aside_logo.topps{
     background-color: var(--topps_col);
+    border: 10px solid var(--topps_col);
 }
 
 .aside_logo.wbr{
     background-color: var(--wbr_col);
+    border: 10px solid var(--wbr_col);
 }
 
 .aside_logo.hearst{
     background-color: var(--hearst_col);
+    border: 10px solid var(--hearst_col);
 }
 
 .aside_logo.lonely{
     background-color: var(--lonely_col);
+    border: 10px solid var(--lonely_col);
 }
 
 .aside_logo.cco{
     background-color: var(--cco_col);
+    border: 10px solid var(--cco_col);
+}
+
+.aside_logo:hover{
+    border: 10px solid var(--aside_logo_hover);
+}
+
+.aside_logo:hover img{
+    filter: invert(78%) sepia(26%) saturate(5411%) hue-rotate(37deg) brightness(103%) contrast(93%);
 }
 
 #free_trial{
