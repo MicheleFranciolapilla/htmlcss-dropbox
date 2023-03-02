@@ -1,17 +1,31 @@
 /* Definizione variabili */
 :root{
+    /* Variabili dimensionali dei blocchi*/
+    /*************************************/
     --header_height: 90vh;
-    --header_color: #B4D0E7;
     --nav_height: 10vh;
-    --nav_font_size: 1em;
-    --nav_logo_size: 80%;
-    --arrow_off: darkgray;
-    --arrow_on: blue;
     --central_width: 65%;
     --section_padding: 15vh 5vw;
+    /*************************************/
+    /* Variabili dimensionali di font e loghi */
+    /******************************************/
+    --nav_font_size: 1em;
+    --nav_logo_size: 80%;
+    /******************************************/
+    /* Variabili cromatiche */
+    /************************/
+    --text_color: #181818;
+    --header_color: #B4D0E7;
+    --footer_color: #23272A;
+    --footer_text_color: #A49797;
+    --button_text_color: #FFFFFF;
+    --button_color: #0061FF;
+    --arrow_off: rgb(189, 184, 184);
+    --arrow_on: blue;
+    --faq_active_color: blue;
+    --faq_active_bgcolor: #B4D0E7;
     --inner_block_color: #F5F5F5;
     --designit_col: #A2D39B;
-    --designit_ext: #D1E9CD;
     --asu_col: #61082B;
     --uf_col: #0093CE;
     --topps_col: #FF1C1C;
@@ -19,16 +33,12 @@
     --hearst_col: #B4D0E7;
     --lonely_col: #0D2481;
     --cco_col: #FFD830;
-    --footer_color: #23272A;
-    --footer_text_color: #A49797;
-    --text_color: #181818;
-    --button_text_color: #FFFFFF;
-    --button_color: #0061FF;
-    --faq_active_color: blue;
-    --faq_active_bgcolor: #B4D0E7;
     --aside_logo_hover: rgba(255,255,255,0.5);
+    /************************/
 }
 
+/* Formattazione testi */
+/***********************/
 h1{
     font-size: 4.5em;
 }
@@ -40,20 +50,10 @@ h2{
 h3{
     font-size: 1.5em;
 }
+/***********************/
 
-.text_color{
-    color: var(--text_color);
-}
-
-.footer_text_color{
-    color: var(--footer_text_color);
-}
-
-.central_block{
-    width: var(--central_width);
-    margin: 0 auto;
-}
-
+/* HEADER E NAV */
+/**************************************************/
 header{
     width: 100%;
     min-height: var(--header_height);
@@ -67,41 +67,63 @@ nav{
     font-size: var(--nav_font_size);
 }
 
+.text_color{
+    color: var(--text_color);
+}
+
+/* Posizionamento centrato dei blocchi header e footer. Le sezioni, oltre alla centratura hanno anche un ulteriore padding */
+.central_block{
+    width: var(--central_width);
+    margin: 0 auto;
+}
+
 #left_nav, #right_nav{
     flex-basis: 30%;
     padding: 0 15px;
 }
 
+/* Operazione preliminare per la sottolineatura delle voci del menu, ad eccezione del logo e del pulsante */
 #left_nav > li:not(:first-child), #right_nav > li:not(:last-child){
     line-height: var(--nav_height);
 }
 
+/* Hover con sottolineatura delle voci del menu, ad eccezione del logo e del pulsante */
 #left_nav > li:not(:first-child):hover, #right_nav > li:not(:last-child):hover{
     border-bottom: 1px solid var(--text_color);
 }
 
+/* Dimensionamento ed allineamento del logo */
 #left_nav img{
     padding: 0;
     width: var(--nav_logo_size);
     vertical-align: middle;
 }
 
+/* Override della classe pulsante definita nel file menu.css */
 .btn_normal{
     color: var(--button_text_color);
     background-color: var(--button_color);
 }
 
+/* Blocco centrato nello header */
 #header_block{
     top: var(--nav_height);
     height: calc(var(--header_height) - var(--nav_height));
     padding: calc(var(--nav_height) / 2) 0;
 }
 
+/* Blocco con offset immagine (nello header) e frecce per il link alle sezioni */
 #header_block > #shifted_block{
     bottom: 0;
     transform: translateY(15%);
 }
 
+#header_block a{
+    margin: 2em 0;
+}
+
+/* Frecce per il link alle sezioni */
+/***********************************/
 .arrow_color{
     color: var(--arrow_off);
 }
@@ -160,6 +182,14 @@ nav{
     animation-iteration-count: infinite;
 }
 
+#header_block #link_arrows{
+    bottom: 15%;
+}
+/***********************************/
+/**************************************************/
+
+/* ANIMAZIONI HEADER */
+/**************************************************/
 @keyframes arrow_1{
     0%      {color: var(--arrow_off);}
     10%     {color: var(--arrow_on);}
@@ -197,15 +227,11 @@ nav{
     90%     {color: var(--arrow_on);}
     100%    {color: var(--arrow_off);}
 }
+/**************************************************/
 
-#header_block #link_arrows{
-    bottom: 15%;
-}
-
-#header_block a{
-    margin: 2em 0;
-}
-
+/* PRIMA SECTION */
+/**************************************************/
+/* Padding comune a tutte le sezioni */
 .section_padding{
     padding: var(--section_padding);
 }
@@ -299,7 +325,10 @@ nav{
     color: var(--text_color);
     border: 1px solid var(--text_color);    
 }
+/**************************************************/
 
+/* SECONDA SECTION */
+/**************************************************/
 #business_group{
     margin-top: 3em;
 }
@@ -308,7 +337,10 @@ nav{
     width: calc(90% / 3);
     row-gap: 1.5em;
 }
+/**************************************************/
 
+/* TERZA SECTION */
+/**************************************************/
 #wipro a{
     margin: 2em 0;
 }
@@ -318,7 +350,6 @@ nav{
     height: 34vw;
 }
 
-/* Caratteristiche degli aside in quanto flex items */
 #wipro > #wide_box > aside{
     flex-basis: 34%;
 }
@@ -411,7 +442,10 @@ nav{
     background-color: white;
     color: var(--text_color);
 }
+/**************************************************/
 
+/* QUARTA SECTION (FAQ) */
+/**************************************************/
 #faq > h2::after{
     opacity: 0.3;
     font-size: 0.7em;
@@ -445,6 +479,7 @@ nav{
     text-align: center;
 }
 
+/* Blocco delle risposte che si attiva al click */
 .answer_box{
     background-color: var(--faq_active_bgcolor);
     border-bottom: 3px solid var(--faq_active_color);
@@ -468,24 +503,8 @@ nav{
     animation-fill-mode: forwards;
 }
 
-@keyframes border_bottom_on{
-    from    {border-bottom: 1px solid var(--text_color);}
-    to      {border-bottom: 3px solid var(--faq_active_color);}
-}
-
-@keyframes caret_color{
-    0%      {color: var(--text_color);}
-    100%    {color: var(--faq_active_color);}
-}
-
 .faq_item:hover:active{
     animation-name: border_bottom_off;
-}
-
-@keyframes border_bottom_off{
-    0%      {border-bottom: 3px solid var(--faq_active_color);}
-    1%      {border-bottom: none;}
-    100%    {border-bottom: none;}
 }
 
 .faq_item:hover:active + .answer_box{
@@ -496,10 +515,24 @@ nav{
     animation-name: caret_rev;
     animation-fill-mode: forwards;
 }
+/**************************************************/
 
-@keyframes answers{
-    from    {border-bottom: 3px solid var(--button_color);}
-    to      {border-bottom: 3px solid var(--header_color);}
+/* ANIMAZIONI FAQ */
+/**************************************************/
+@keyframes border_bottom_on{
+    from    {border-bottom: 1px solid var(--text_color);}
+    to      {border-bottom: 3px solid var(--faq_active_color);}
+}
+
+@keyframes caret_color{
+    0%      {color: var(--text_color);}
+    100%    {color: var(--faq_active_color);}
+}
+
+@keyframes border_bottom_off{
+    0%      {border-bottom: 3px solid var(--faq_active_color);}
+    1%      {border-bottom: none;}
+    100%    {border-bottom: none;}
 }
 
 @keyframes caret_rev{
@@ -509,6 +542,13 @@ nav{
     to      {transform: rotate(180deg);
             color:var(--faq_active_color);
             }
+}
+/**************************************************/
+
+/* FOOTER */
+/**************************************************/
+.footer_text_color{
+    color: var(--footer_text_color);
 }
 
 footer{
@@ -540,3 +580,4 @@ footer{
     border: none;
     margin: 0 5px;
 }
+/**************************************************/
