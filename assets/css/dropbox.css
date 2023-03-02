@@ -100,8 +100,32 @@ nav{
     transform: translateY(15%);
 }
 
-#header_block #arrow_link{
+#header_block #link_arrows > span:first-child{
     font-size: 2.5em;
+}
+
+#header_block #link_arrows > span:nth-child(2){
+    font-size: 2.7em;
+}
+
+#header_block #link_arrows > span:nth-child(3){
+    font-size: 2.9em;
+}
+
+#header_block #link_arrows > span:nth-child(4){
+    font-size: 3.1em;
+}
+
+#header_block #link_arrows > span:last-child{
+    font-size: 3.3em;
+}
+
+#header_block #link_arrows > span{
+    padding-right: 0.1em;
+}
+
+
+#header_block #link_arrows{
     bottom: 15%;
 }
 
