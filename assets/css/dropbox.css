@@ -20,6 +20,8 @@
     --footer_text_color: #A49797;
     --button_text_color: #FFFFFF;
     --button_color: #0061FF;
+    --blue_button_hover: rgb(154, 118, 237);
+    --white_button_hover: lightgray;
     --arrow_off: rgb(189, 184, 184);
     --arrow_on: blue;
     --faq_active_color: blue;
@@ -35,6 +37,11 @@
     --cco_col: #FFD830;
     --aside_logo_hover: rgba(255,255,255,0.5);
     /************************/
+}
+
+/* Soft scroll tra le sezioni */
+html{
+    scroll-behavior: smooth;
 }
 
 /* Formattazione testi */
@@ -150,6 +157,20 @@ nav{
 
 #header_block #link_arrows > span{
     padding-right: 0.1em;
+}
+
+/* Effetto hover sui pulsanti blu */
+#right_nav .btn_normal:hover,
+#shifted_block .btn_normal:hover,
+#card_set .btn_normal:hover,
+#enterprise .btn_normal:hover{
+    background-color: var(--blue_button_hover);
+}
+
+/* Effetto hover sui pulsanti bianchi */
+#meet_partner .btn_normal:hover,
+#wipro .btn_normal:hover{
+    color: var(--white_button_hover);
 }
 
 .arrow1{

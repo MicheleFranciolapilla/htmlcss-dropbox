@@ -74,7 +74,7 @@
                 </li>
             </ul>
         </nav>
-        <!-- Sotto-sezione dello header, posizionata "relative" per consentire un efficace posizionamento del contenitore sottostante (con immagine e testo) al fine di avere un minimo di responsività (infatti, le posizioni relative della freccia di link interno e dell'immagine si conservano anche al rimpicciolirsi del viewport) -->
+        <!-- Sotto-sezione dello header, posizionata "relative" per consentire un efficace posizionamento del contenitore sottostante (con immagine e testo) al fine di avere un minimo di responsività (infatti, le posizioni relative delle frecce di link interno e dell'immagine si conservano anche al rimpicciolirsi del viewport) -->
         <section id="header_block" class="p_rel central_block">
             <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
             <!-- Shifted_block e' posizionato "absolute" rispetto allo header e contiene l'immagine "float:right" ed il testo a lato -->
@@ -85,6 +85,7 @@
                 </p>
                 <a href="#" class="reset_decor btn_normal d_ib">Inizia la tua prova gratuita</a>
                 <span class="d_block">Annulla in qualsiasi momento</span>
+                <!-- Blocco contenente le frecce di link alle varie sezioni -->
                 <div id="link_arrows" class="p_abs">
                     <span><a href="#find_plan_section" class="reset_decor arrow_color arrow1"><i class="fa-solid fa-arrow-down"></i></a></span>
                     <span><a href="#business" class="reset_decor arrow_color arrow2"><i class="fa-solid fa-arrow-down"></i></a></span>
@@ -96,10 +97,15 @@
         </section>
     </header>
 
+    <!-- Nel main si trovano tutte le sezioni, ovvero tutti i blocchi della pagina, ad eccezione di header e footer. Tutte le sezioni, ad eccezione delle sotto-sezioni con i loghi dei partner, hanno un padding comune che le distanzia e le allinea al centro della pagina -->
     <main>
 
         <section id="find_plan_section" class="central_block section_padding d_flex flex_column flex_main_btw">
-        <!-- Find_plan_section è l'elemento puntato dalla freccia nello header (link interno); è centrato nella pagina (come le sezioni successive) ed è un flexbox con main-axis verticale. I suoi flex items sono: titolo, radio button e set delle card -->
+        <!-- Find_plan_section è l'elemento puntato dalla prima freccia nello header (link interno); è centrato nella pagina (come le sezioni successive) ed è un flexbox con main-axis verticale. 
+        I suoi flex items sono il titolo e tre "article": 
+        1) #radio_and_cards che racchiude i radio buttons ed il gruppo delle card
+        2) #enterprise con il suo piccolo riquadro
+        3) #meet_partner con foto ed elementi tesuali con pulsante -->
             <h2>Trova il piano business che fa per te</h2>
             
             <article id="radio_and_cards" class="d_flex flex_column flex_main_btw">
@@ -339,7 +345,6 @@
                             </ul>
                         </div>
                     </div>
-    
                 </div>
             </article>
 
@@ -374,6 +379,7 @@
         </section>
 
         <section id="business" class="central_block section_padding">
+            <!-- Nella seconda sezione abbiamo sei card (immagine + parte testuale) inserite in un wrap flex orizzontale, posizionate in misura di tre per rigo -->
             <h2>Esegui più operazioni con Dropbox Business</h2>
             <div id="business_group" class="d_flex flex_wrap flex_main_btw">
                 <!-- Item 1 -->
@@ -428,6 +434,10 @@
         </section>
 
         <section id="wipro">
+            <!-- La terza sezione è suddivisa in tre article:
+            1) titolo e link
+            2) flexbox annidati con, sui lati due aside, ciascuno con quattro loghi quadrati (che mantengono la forma anche per viewport differenti) e, al centro, un elemento il cui contenuto presenta una scrollbar laterale al ridursi delle dimensioni del viewport
+            3) sottotitolo con link -->
             <article class="central_block section_padding">
                 <h2>Più di 500.000 team utilizzano</h2>
                 <h2>Dropbox Busines</h2>
@@ -435,6 +445,7 @@
             </article>
             
             <article id="wide_box" class="d_flex">
+                <!-- Gruppo loghi di sinistra -->
                 <aside class="d_flex flex_wrap">
                     <div class="aside_logo designit">
                         <img src="assets/img/designit.svg" alt="logo designit" width="50%">
@@ -449,6 +460,7 @@
                         <img src="assets/img/topps.svg" alt="logo topps" width="50%">
                     </div>
                 </aside>
+                <!-- Blocco centrale, sensibile al cambio di viewport, con scrollbar al bisogno -->
                 <div id="inner" class="d_flex flex_column">
                     <img src="assets/img/designit.svg" alt="logo designit" width="100%">
                     <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -457,6 +469,7 @@
                     </p>
                     <span>Morten Thomsen, Global IT Lead</span>
                 </div>
+                <!-- Gruppo loghi di destra -->
                 <aside class="d_flex flex_wrap">
                     <div class="aside_logo wbr">
                         <img src="assets/img/world_bicycle_relief.svg" alt="logo wbr" width="50%">
@@ -482,6 +495,7 @@
         </section>
 
         <section id="faq" class="central_block section_padding">
+            <!-- Nella quarta sezione (FAQ) abbiamo titolo e riquadro delle domande frequenti, attivabile all'hover ed al click -->
             <h2>Domande frequenti </h2>
             <div id="sliding_faq" class="d_flex flex_column">
                 
@@ -490,7 +504,7 @@
                     <span class="text">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
                     <span class="caret"><i class="fa-solid fa-caret-down"></i></span>
                 </div>
-                <!-- Riquadro risposte -->
+                <!-- Riquadro risposte (visibile al click)-->
                 <div class="answer_box"></div>
 
                 <!-- Faq-item 2 -->
@@ -498,7 +512,7 @@
                     <span class="text">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
                     <span class="caret"><i class="fa-solid fa-caret-down"></i></span>
                 </div>
-                <!-- Riquadro risposte -->
+                <!-- Riquadro risposte (visibile al click)-->
                 <div class="answer_box"></div>
 
                 <!-- Faq-item 3 -->
@@ -506,7 +520,7 @@
                     <span class="text">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
                     <span class="caret"><i class="fa-solid fa-caret-down"></i></span>
                 </div>
-                <!-- Riquadro risposte -->
+                <!-- Riquadro risposte (visibile al click)-->
                 <div class="answer_box"></div>
             </div>
         </section>
