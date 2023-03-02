@@ -22,6 +22,8 @@
     --text_color: #181818;
     --button_text_color: #FFFFFF;
     --button_color: #0061FF;
+    --faq_active_color: blue;
+    --faq_active_bgcolor: #B4D0E7;
 }
 
 h1{
@@ -292,9 +294,19 @@ nav{
     color: var(--text_color);
 }
 
+#faq > h2::after{
+    opacity: 0.3;
+    font-size: 0.7em;
+    content: " (fare click)";
+}
+
 #faq > #sliding_faq{
     padding: 3em 0;
     line-height: 3em;
+}
+
+#sliding_faq span{
+    padding-left: 0.5em;
 }
 
 #faq > #sliding_faq > .faq_item:first-child{
@@ -303,6 +315,7 @@ nav{
 
 #faq > #sliding_faq > .faq_item{
     border-bottom: 1px solid var(--text_color);
+    transition: all, 1s;
 }
 
 #faq > #sliding_faq > .faq_item > .text{
@@ -314,51 +327,69 @@ nav{
     text-align: center;
 }
 
+.answer_box{
+    background-color: var(--faq_active_bgcolor);
+    border-bottom: 3px solid var(--faq_active_color);
+    padding-left: 1em;
+    display: none;
+}
+
+.answer_box::after{
+    color: var(--faq_active_color);
+    content: "- Spazio riservato alle risposte per le domande più frequenti, denominate FAQ -";
+}
+
 .faq_item:hover{
-    animation-name: bord_bott;
-    animation-duration: 1s;
+    animation-name: border_bottom_on;
     animation-fill-mode: forwards;
+    background-color: var(--faq_active_bgcolor);
 }
 
 .faq_item:hover .caret{
-    animation-name: caret_col;
-    animation-duration: 1s;
+    animation-name: caret_color;
     animation-fill-mode: forwards;
 }
 
-@keyframes bord_bott{
+@keyframes border_bottom_on{
     from    {border-bottom: 1px solid var(--text_color);}
-    to      {border-bottom: 3px solid orange;}
+    to      {border-bottom: 3px solid var(--faq_active_color);}
 }
 
-@keyframes caret_col{
+@keyframes caret_color{
     0%      {color: var(--text_color);}
-    100%    {color: orange;}
+    100%    {color: var(--faq_active_color);}
 }
 
 .faq_item:hover:active{
-    animation-name: answers;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation-name: border_bottom_off;
+}
+
+@keyframes border_bottom_off{
+    0%      {border-bottom: 3px solid var(--faq_active_color);}
+    1%      {border-bottom: none;}
+    100%    {border-bottom: none;}
+}
+
+.faq_item:hover:active + .answer_box{
+    display: block;
 }
 
 .faq_item:hover:active .caret{
     animation-name: caret_rev;
-    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
 @keyframes answers{
-    from    {border-bottom: 1px solid var(--text_color);}
-    to      {border-bottom: 3px solid orange;}
+    from    {border-bottom: 3px solid var(--button_color);}
+    to      {border-bottom: 3px solid var(--header_color);}
 }
 
 @keyframes caret_rev{
-    0%      {transform: rotate(0deg);
-             color: orange;
+    from    {transform: rotate(0deg);
+            color: var(--faq_active_color);
             }
-    100%    {transform: rotate(180deg);
-             color:red;
+    to      {transform: rotate(180deg);
+            color:var(--faq_active_color);
             }
 }
 
