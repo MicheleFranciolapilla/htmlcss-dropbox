@@ -5,6 +5,8 @@
     --nav_height: 10vh;
     --nav_font_size: 1em;
     --nav_logo_size: 80%;
+    --arrow_off: darkgray;
+    --arrow_on: blue;
     --central_width: 65%;
     --section_padding: 15vh 5vw;
     --inner_block_color: #F5F5F5;
@@ -100,6 +102,10 @@ nav{
     transform: translateY(15%);
 }
 
+.arrow_color{
+    color: var(--arrow_off);
+}
+
 #header_block #link_arrows > span:first-child{
     font-size: 2.5em;
 }
@@ -124,6 +130,73 @@ nav{
     padding-right: 0.1em;
 }
 
+.arrow1{
+    animation-name: arrow_1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.arrow2{
+    animation-name: arrow_2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.arrow3{
+    animation-name: arrow_3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.arrow4{
+    animation-name: arrow_4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.arrow5{
+    animation-name: arrow_5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow_1{
+    0%      {color: var(--arrow_off);}
+    10%     {color: var(--arrow_on);}
+    20%     {color: var(--arrow_off);}
+    100%    {color: var(--arrow_off);}
+}
+
+@keyframes arrow_2{
+    0%      {color: var(--arrow_off);}
+    20%     {color: var(--arrow_off);}
+    30%     {color: var(--arrow_on);}
+    40%     {color: var(--arrow_off);}
+    100%    {color: var(--arrow_off);}
+}
+
+@keyframes arrow_3{
+    0%      {color: var(--arrow_off);}
+    40%     {color: var(--arrow_off);}
+    50%     {color: var(--arrow_on);}
+    60%     {color: var(--arrow_off);}
+    100%    {color: var(--arrow_off);}
+}
+
+@keyframes arrow_4{
+    0%      {color: var(--arrow_off);}
+    60%     {color: var(--arrow_off);}
+    70%     {color: var(--arrow_on);}
+    80%     {color: var(--arrow_off);}
+    100%    {color: var(--arrow_off);}
+}
+
+@keyframes arrow_5{
+    0%      {color: var(--arrow_off);}
+    80%     {color: var(--arrow_off);}
+    90%     {color: var(--arrow_on);}
+    100%    {color: var(--arrow_off);}
+}
 
 #header_block #link_arrows{
     bottom: 15%;
