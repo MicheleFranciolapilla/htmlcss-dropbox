@@ -67,10 +67,15 @@ nav{
 
 #left_nav, #right_nav{
     flex-basis: 30%;
+    padding: 0 15px;
 }
 
-#left_nav, #right_nav{
-    padding: 0 15px;
+#left_nav > li:not(:first-child), #right_nav > li:not(:last-child){
+    line-height: var(--nav_height);
+}
+
+#left_nav > li:not(:first-child):hover, #right_nav > li:not(:last-child):hover{
+    border-bottom: 1px solid var(--text_color);
 }
 
 #left_nav img{
